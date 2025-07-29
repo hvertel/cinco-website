@@ -1,0 +1,250 @@
+/* ===== ESTILOS ESPECÍFICOS PARA LA PÁGINA EQUIPO ===== */
+
+/* Hero Section del Equipo */
+.team-hero {
+    background: linear-gradient(135deg, #023047 0%, #014157 50%, #023047 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23ffb703"><polygon points="0,0 1000,80 1000,100 0,100" opacity="0.1"/></svg>') no-repeat bottom;
+    background-size: cover;
+}
+
+.team-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.team-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 2;
+}
+
+/* Sección de Equipo */
+.team-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.team-section.alt-bg {
+    background: #f8f9ff;
+}
+
+/* Grid del Equipo */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+/* Tarjetas de Miembros del Equipo */
+.team-member {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.team-section.alt-bg .team-member {
+    background: white;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    border-color: #ffb703;
+}
+
+/* Imagen del Miembro */
+.member-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.1);
+}
+
+/* Avatar Placeholder */
+.placeholder-avatar {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #023047, #014157);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffb703;
+}
+
+/* Información del Miembro */
+.team-member h3 {
+    font-size: 1.4rem;
+    color: #023047;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    color: #ffb703;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.member-bio {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Redes Sociales */
+.member-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.member-social a {
+    width: 40px;
+    height: 40px;
+    background: #f8f9ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    border: 2px solid #e0e7ff;
+}
+
+.member-social a:hover {
+    background: linear-gradient(135deg, #023047, #014157);
+    border-color: #ffb703;
+    transform: translateY(-3px);
+}
+
+/* Tabs para Docentes */
+.team-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.team-tab {
+    padding: 1rem 2rem;
+    background: white;
+    border: 2px solid #e0e7ff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.team-tab.active,
+.team-tab:hover {
+    background: linear-gradient(135deg, #023047, #014157);
+    color: white;
+    border-color: #ffb703;
+    box-shadow: 0 5px 20px rgba(2, 48, 71, 0.3);
+}
+
+/* CTA Section */
+.team-cta {
+    background: linear-gradient(135deg, #023047 0%, #014157 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.team-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.team-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Animaciones */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.team-member.visible {
+    animation: fadeInScale 0.6s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .team-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .team-tab {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .member-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .placeholder-avatar {
+        font-size: 2.5rem;
+    }
+}
