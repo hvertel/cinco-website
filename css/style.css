@@ -50,7 +50,7 @@ nav {
 }
 
 .logo-image {
-    height: 80px; /* Misma altura que tenía el logo-icon */
+    height: 160px; /* Misma altura que tenía el logo-icon */
     width: auto; /* Mantiene las proporciones originales */
     object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
     transition: transform 0.3s ease;
@@ -128,6 +128,7 @@ nav {
 }
 
 .hero-content {
+    margin-top: 60px;
     position: relative;
     z-index: 2;
 }
