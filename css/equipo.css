@@ -8,6 +8,7 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    margin-top: 80px;
 }
 
 .team-hero::before {
