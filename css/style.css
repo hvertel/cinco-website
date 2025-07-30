@@ -303,15 +303,13 @@ nav {
 .service-icon {
     width: 100px;
     height: 100px;
-    background: linear-gradient(135deg, #023047, #014157);
     border-radius: 50%;
     margin: 0 auto 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 5rem;
     color: #ffb703;
-    box-shadow: 0 10px 30px rgba(2, 48, 71, 0.3);
 }
 
 .service-card h3 {
