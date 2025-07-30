@@ -253,7 +253,7 @@ nav {
 
 .service-card {
     background: linear-gradient(135deg, #f6f9fc 0%, #ffffff 100%);
-    padding: 3rem;
+    padding: 1.5rem;
     border-radius: 25px;
     text-align: center;
     border: 2px solid #e0e7ff;
