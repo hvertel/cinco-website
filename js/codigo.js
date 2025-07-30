@@ -166,10 +166,12 @@ function initHeaderEffects() {
         
         // Cambiar fondo del header al hacer scroll
         if (currentScrollY > 100) {
+            header.classList.add('scrolled');
             header.style.background = 'rgba(2, 48, 71, 0.95)';
             header.style.backdropFilter = 'blur(20px)';
             header.style.boxShadow = '0 4px 30px rgba(2, 48, 71, 0.4)';
         } else {
+            header.classList.remove('scrolled');
             header.style.background = '#023047';
             header.style.backdropFilter = 'blur(10px)';
             header.style.boxShadow = '0 2px 20px rgba(2, 48, 71, 0.3)';
