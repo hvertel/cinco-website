@@ -318,7 +318,8 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .mission-vision {
@@ -351,7 +352,7 @@ nav {
 }
 
 .value-icon {
-    width: 50px;
+    width: 74px;
     height: 50px;
     background: rgba(255, 183, 3, 0.2);
     border-radius: 50%;
