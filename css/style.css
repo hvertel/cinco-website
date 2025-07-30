@@ -242,15 +242,13 @@ nav {
 .benefit-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #023047, #014157);
     border-radius: 50%;
     margin: 0 auto 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 5rem;
     color: #ffb703;
-    box-shadow: 0 10px 30px rgba(2, 48, 71, 0.2);
 }
 
 /* ===== SERVICES PREVIEW ===== */
