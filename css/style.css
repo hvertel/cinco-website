@@ -586,42 +586,133 @@ nav {
     color: #023047;
 }
 
-/* Footer */
+/* Footer Rediseñado */
 footer {
     background: #1a1a2e;
     color: white;
-    padding: 50px 0 30px;
+    padding: 60px 0 30px;
 }
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
+    grid-template-columns: 2fr 1.5fr 1fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
 }
 
 .footer-section h3 {
     color: #ffb703;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
 }
 
-.footer-section a {
+/* Sección de Información General */
+.footer-section p {
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
+    color: #ccc;
+}
+
+.footer-nit {
+    font-size: 0.95rem;
+}
+
+.footer-address {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem !important;
+}
+
+/* Redes Sociales */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 183, 3, 0.1);
+    border: 1px solid rgba(255, 183, 3, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #ffb703;
+}
+
+.social-links a:hover {
+    background: #ffb703;
+    color: #1a1a2e;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 183, 3, 0.3);
+}
+
+.social-links svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Sección de Contacto */
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-number, .contact-email {
+    font-size: 1.05rem;
+    color: white !important;
+    margin-left: 1rem;
+}
+
+/* Enlaces Rápidos */
+.footer-link {
+    display: block;
     color: #ccc;
     text-decoration: none;
-    display: block;
-    margin-bottom: 0.5rem;
-    transition: color 0.3s ease;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
 }
 
-.footer-section a:hover {
+.footer-link:hover {
     color: #ffb703;
+    padding-left: 10px;
+    border-bottom: 1px solid #ffb703;
 }
 
 .footer-bottom {
     text-align: center;
-    margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid #333;
-    color: #ccc;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .contact-number, .contact-email {
+        margin-left: 0;
+    }
+    
+    .footer-link {
+        padding: 0.8rem 0;
+    }
+    
+    .footer-link:hover {
+        padding-left: 0;
+    }
 }
 
 /* Animations */
