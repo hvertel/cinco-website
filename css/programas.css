@@ -1,0 +1,352 @@
+/* ===== ESTILOS ESPECÍFICOS PARA LA PÁGINA PROGRAMAS ===== */
+
+/* Hero Section */
+
+.programs-hero {
+    background: linear-gradient(135deg, #023047 0%, #014157 50%, #023047 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.programs-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23ffb703"><polygon points="0,0 1000,80 1000,100 0,100" opacity="0.1"/></svg>') no-repeat bottom;
+    background-size: cover;
+}
+
+.programs-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease;
+    margin-top: 100px;
+}
+
+.programs-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease 0.2s both;
+}
+
+/* Filtros de Programas */
+.program-filters {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease 0.4s both;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    background: rgba(255, 183, 3, 0.1);
+    border: 2px solid rgba(255, 183, 3, 0.3);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #ffb703;
+    color: #023047;
+    border-color: #ffb703;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 183, 3, 0.3);
+}
+
+/* Catálogo de Programas */
+.programs-catalog {
+    padding: 80px 0;
+    background: #f8f9ff;
+}
+
+/* Item de Programa */
+.program-item {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 0;
+}
+
+.program-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+}
+
+/* Imagen del Programa */
+.program-image {
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.program-item:hover .program-image img {
+    transform: scale(1.05);
+}
+
+.program-category {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #ffb703;
+    color: #023047;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Detalles del Programa */
+.program-details {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.program-details h2 {
+    color: #023047;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Meta información */
+.program-meta {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.program-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.price {
+    color: #ffb703;
+    font-weight: 600;
+}
+
+/* Descripción */
+.program-description {
+    color: #555;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* Características */
+.program-features {
+    background: #f8f9ff;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.program-features h3 {
+    color: #023047;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.program-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.program-features li {
+    padding: 0.5rem 0;
+    color: #555;
+}
+
+/* Instructor */
+.program-instructor {
+    border-top: 1px solid #e0e7ff;
+    padding-top: 1.5rem;
+}
+
+.program-instructor h3 {
+    color: #023047;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.program-instructor p {
+    color: #666;
+    margin: 0;
+}
+
+/* Acciones del Programa */
+.program-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+}
+
+/* Botón de WhatsApp (reutilizando estilos) */
+.wa-icon-button {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background: #25D366;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+}
+
+.wa-icon-button img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.wa-icon-button:hover {
+    background: #128C7E;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+/* CTA Section */
+.programs-cta {
+    background: linear-gradient(135deg, #023047 0%, #014157 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.programs-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.programs-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Estados de filtrado */
+.program-item {
+    display: grid;
+    transition: all 0.3s ease;
+}
+
+.program-item.hidden {
+    display: none;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .program-item {
+        grid-template-columns: 1fr;
+    }
+    
+    .program-image {
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .programs-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .program-filters {
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .program-details {
+        padding: 2rem;
+    }
+    
+    .program-details h2 {
+        font-size: 1.5rem;
+    }
+    
+    .program-meta {
+        gap: 1rem;
+    }
+    
+    .program-actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .program-actions .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Placeholder para imágenes faltantes */
+.program-image:not([src]),
+.program-image[src=""] {
+    background: linear-gradient(135deg, #023047, #014157);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffb703;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Estilo para enlace activo en navegación */
+.nav-links a.active {
+    background: rgba(255, 183, 3, 0.2);
+    border-radius: 25px;
+}
