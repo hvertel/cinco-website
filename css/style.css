@@ -544,6 +544,28 @@ nav {
     100% { box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); }
 }
 
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    background: #ffb703;
+    border: 2px solid rgba(255, 183, 3, 0.3);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #ffb703;
+    color: #023047;
+    border-color: #ffb703;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 183, 3, 0.3);
+}
+
+
 /* Testimonials */
 .testimonials {
     padding: 100px 0;
