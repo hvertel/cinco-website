@@ -19,6 +19,7 @@ function initializeWebsite() {
     initLazyLoading();
     initAccessibility();
     initPerformanceOptimizations();
+    initProgramFilters();
 }
 
 // ===== NAVEGACIÓN SUAVE =====
@@ -98,6 +99,48 @@ function animateProgramCards(tabName) {
 }
 // Inicializar las pestañas al cargar la página
 document.addEventListener('DOMContentLoaded', initProgramTabs);
+
+// Función para los filtros de programas
+function initProgramFilters() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const programItems = document.querySelectorAll('.program-item');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remover clase activa de todos los botones
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Agregar clase activa al botón clickeado
+            this.classList.add('active');
+            
+            // Obtener categoría a filtrar
+            const filterCategory = this.getAttribute('data-filter');
+            
+            // Filtrar programas
+            programItems.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                
+                if (filterCategory === 'todos' || itemCategory === filterCategory) {
+                    item.style.display = 'grid';
+                    // Reiniciar animación
+                    item.style.animation = 'none';
+                    setTimeout(() => {
+                        item.style.animation = 'fadeInUp 0.6s ease forwards';
+                    }, 10);
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            
+            // Scroll suave al catálogo
+            const catalogSection = document.querySelector('.programs-catalog');
+            if (catalogSection) {
+                catalogSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+}
+
 
 // ===== ANIMACIONES DE CONTADORES =====
 function animateCounter(element, start, end, duration) {
