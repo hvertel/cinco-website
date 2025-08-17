@@ -788,7 +788,8 @@ footer {
     }
 
     .program-tabs {
-        display: none;
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     .about-content {
