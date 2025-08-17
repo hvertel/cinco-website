@@ -771,6 +771,10 @@ footer {
         display: none;
     }
     
+    .hero{
+        width: 80%;
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
