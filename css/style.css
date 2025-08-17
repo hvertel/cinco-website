@@ -774,7 +774,7 @@ footer {
     .hero h1 {
         font-size: 2rem;
     }
-    .services-preview {
+    .services-area {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
