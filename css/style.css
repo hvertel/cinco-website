@@ -789,7 +789,7 @@ footer {
 
     .program-tabs {
         display: flex;
-        flex-wrap: nowrap;
+        flex-direction: column;
     }
 
     .about-content {
