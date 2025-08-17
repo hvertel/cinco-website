@@ -6,7 +6,40 @@
     <title>CINCO - Centro de Innovación y Conocimiento</title>
     <link rel="icon" type="image/png" href="recursos/symbol.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/equipo.css">
+    <style>
+        .keyboard-navigation *:focus {
+            outline: 2px solid #ffb703 !important;
+            outline-offset: 2px;
+        }
+        
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes slideOutRight {
+            from { transform: translateX(0); opacity: 1; }
+            to { transform: translateX(100%); opacity: 0; }
+        }
+        
+        .mobile-menu-open {
+            animation: slideInRight 0.3s ease;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                right: 20px;
+                background: #023047;
+                flex-direction: column;
+                padding: 1rem;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                min-width: 200px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
