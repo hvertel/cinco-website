@@ -787,6 +787,10 @@ footer {
         font-size: 2rem;
     }
 
+    .program-tabs {
+        display: none;
+    }
+
     .about-content {
         grid-template-columns: 1fr;
     }
