@@ -778,7 +778,12 @@ footer {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
+    .benefits{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
     .services-preview h1{
         font-size: 2rem;
     }
@@ -794,6 +799,11 @@ footer {
     .program-tabs {
         display: flex;
         flex-direction: column;
+    }
+
+    .programs-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .about-content {
