@@ -761,15 +761,32 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 320px) {
+@media (max-width: 768px) {
+   
+    .container{
+        width: 80%;
+    }   
+
     .nav-links {
         display: none;
     }
     
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .services-preview h1{
+        font-size: 2rem;
     }
     
+    .value-prop h1{
+        font-size: 2rem;
+    }
+
+    .programs h1{
+        font-size: 2rem;
+    }
+
     .about-content {
         grid-template-columns: 1fr;
     }
