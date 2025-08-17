@@ -763,10 +763,6 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
    
-    .container{
-        width: 80%;
-    }   
-
     .nav-links {
         display: none;
     }
