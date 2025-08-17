@@ -761,7 +761,7 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 320px) {
     .nav-links {
         display: none;
     }
