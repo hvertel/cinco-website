@@ -2,6 +2,13 @@
 /* Estilos CSS para la página web corporativa */
 
 /* Reset y Configuración Base */
+
+:root {
+    --primario: #1A4B38;
+    --secundario: #FFFFFF;
+    --complementario: #363435;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +30,7 @@ body {
 
 /* ===== HEADER ===== */
 header {
-    background: #023047;
+    background: #1A4B38;
     color: white;
     padding: 1rem 0;
     position: fixed;
@@ -86,7 +93,7 @@ nav {
     content: 'C';
     font-size: 1.8rem;
     font-weight: bold;
-    color: #023047;
+    color: #1A4B38;
 }
 
 .logo-icon::after {
@@ -94,7 +101,7 @@ nav {
     position: absolute;
     width: 20px;
     height: 20px;
-    border: 3px solid #023047;
+    border: 3px solid #1A4B38;
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -123,7 +130,7 @@ nav {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background: linear-gradient(135deg, #023047 0%, #014157 50%, #023047 100%);
+    background: linear-gradient(135deg, #1A4B38 0%, #014157 50%, #1A4B38 100%);
     color: white;
     padding: 150px 0 100px;
     text-align: center;
@@ -164,7 +171,7 @@ nav {
 .cta-button {
     display: inline-block;
     background: linear-gradient(45deg, #ffb703, #ffd60a);
-    color: #023047;
+    color: #1A4B38;
     padding: 1rem 2.5rem;
     text-decoration: none;
     border-radius: 50px;
@@ -346,7 +353,7 @@ nav {
 }
 
 .mission-vision h3 {
-    color: #023047;
+    color: #1A4B38;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -358,7 +365,7 @@ nav {
 }
 
 .value-item {
-    background: linear-gradient(135deg, #023047, #014157);
+    background: linear-gradient(135deg, #1A4B38, #014157);
     color: white;
     padding: 1.5rem;
     border-radius: 15px;
@@ -422,7 +429,7 @@ nav {
 
 .tab-button.active,
 .tab-button:hover {
-    background: linear-gradient(135deg, #023047, #014157);
+    background: linear-gradient(135deg, #1A4B38, #014157);
     color: white;
     border-color: #ffb703;
     box-shadow: 0 5px 20px rgba(2, 48, 71, 0.3);
@@ -491,7 +498,7 @@ nav {
 }
 
 .program-badge {
-    background: linear-gradient(135deg, #023047, #014157);
+    background: linear-gradient(135deg, #1A4B38, #014157);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 25px;
@@ -501,7 +508,7 @@ nav {
 
 .program-price {
     background: #ffb703;
-    color: #023047;
+    color: #1A4B38;
     padding: 0.5rem 1rem;
     border-radius: 25px;
     font-weight: bold;
@@ -559,7 +566,7 @@ nav {
 .filter-btn:hover,
 .filter-btn.active {
     background: #ffb703;
-    color: #023047;
+    color: #1A4B38;
     border-color: #ffb703;
     transform: translateY(-2px);
     box-shadow: 0 5px 20px rgba(255, 183, 3, 0.3);
@@ -569,7 +576,7 @@ nav {
 /* Testimonials */
 .testimonials {
     padding: 100px 0;
-    background: linear-gradient(135deg, #023047 0%, #014157 100%);
+    background: linear-gradient(135deg, #1A4B38 0%, #014157 100%);
     color: white;
 }
 
@@ -605,7 +612,7 @@ nav {
     justify-content: center;
     font-weight: bold;
     font-size: 1.5rem;
-    color: #023047;
+    color: #1A4B38;
 }
 
 /* Footer Rediseñado */
@@ -783,7 +790,7 @@ footer {
         position: fixed;
         top: 80px;
         right: 20px;
-        background: #023047;
+        background: #1A4B38;
         flex-direction: column;
         padding: 1rem;
         border-radius: 10px;
