@@ -1,14 +1,14 @@
 /* ===== CINCO - Centro de Innovación y Conocimiento ===== */
 /* Estilos CSS para la página web corporativa */
 
-/* Reset y Configuración Base */
+/* Reset y Configuración Base 
 
 :root {
     --primario: #1A4B38;
     --secundario: #FFFFFF;
     --complementario: #363435;
   }
-
+*/
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ body {
 
 /* ===== HEADER ===== */
 header {
-    background: #1A4B38;
+    background: #1a4b38;
     color: white;
     padding: 1rem 0;
     position: fixed;
