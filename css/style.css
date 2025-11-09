@@ -38,12 +38,13 @@ header {
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 20px rgba(2, 48, 71, 0.3);
+    box-shadow: 0 2px 20px rgba(26, 76, 56, 0.3);
     transition: all 0.3s ease;
 }
 
 header.scrolled {
     padding: 0.5rem 0;
+    background: #1a4b38;
 }
 
 header.scrolled .logo-image {
